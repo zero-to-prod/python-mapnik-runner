@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  mapnik:
+    build: .
+    volumes:
+      - .:/app
+      - ./generated:/app/generated
+    user: admin
